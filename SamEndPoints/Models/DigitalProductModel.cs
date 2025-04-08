@@ -8,7 +8,7 @@ namespace SamEndpoints.SamEndPoints.Models
         public int Id { get; set;}
         public string? Title { get; set; }
 
-        public bool? HasBeenOrdered {get; set;}
+        public bool? HasBeenOrdered {get; private set;}
 
         public void ShipItem(User user)
         {
