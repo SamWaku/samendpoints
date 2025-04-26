@@ -28,6 +28,15 @@ public static class CollectionExetensions
             .Take(filter.PageSize);
     }
 
+    // public static IQueryable<> AllOrderAndPaginate(
+    //     this IQueryable<T> data, PaginationFilter filter
+    // )
+    // {
+    //     return data
+    //         .OrderByDescending(x => x.Id)
+    //         .Skip()
+    // }
+
      public static IQueryable<T> ConditionalWhere<T>(this IQueryable<T> queryable, bool condition,
         Expression<Func<T, bool>> predicate)
     {

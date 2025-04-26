@@ -11,5 +11,6 @@ namespace SamEndPoints.SamEndPoints.Database
            
         }
         public DbSet<User> Users{ get; set; }
+        public DbSet<ProductModels> ProductModels{ get; set; }
     }
 }
